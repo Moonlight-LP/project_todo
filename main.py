@@ -81,7 +81,7 @@ async def update_appointment(appointment_id: str, appointment:Appointment):
     with open('appointments.txt', 'w+') as appointments_list_file:
         appointments_list_file.write(json.dumps(todo_list, default=lambda o: o.__dict__, sort_keys=True, indent=4))
         
-        #return {"message": "Appointment updated successfully"}
+    #return {"message": "Appointment updated successfully"}
         
     return {"appointment_id": appointment_id}
 
