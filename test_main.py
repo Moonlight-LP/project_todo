@@ -26,7 +26,7 @@ def test_update_appointment_():
     updated_appointment_data = {
         "title": "Updated",
         "description": "This is an updated test appointment",
-        "completed": True,
+        "completed": False,
         "due_date": "2023-04-22"
     }
     response = client.put("/appointments/1", json=updated_appointment_data)
